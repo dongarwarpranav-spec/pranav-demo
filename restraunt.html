@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practice of sites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        :root {
+            --firstcolor: #40e0d0;
+            --seccolor: #00416a;
+            --tricolor: wheat;
+            --fourcolor: white;
+            --fivecolor: black;
+
+
+        }
+
+        body {
+            background-color: var(--seccolor);
+
+
+
+        }
+
+        nav {
+            border: 2px solid;
+            list-style-type: none;
+            margin: 5px;
+            padding: 22px;
+            background-color: var(--tricolor);
+            box-shadow: #00416a;
+            position: sticky;
+            /* display: flex;
+            justify-content: space-between;
+            align-items: center; */
+
+        }
+
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 270px;
+            height: 40px;
+        }
+
+        .cards {
+            /* height: 35vh; */
+            width: 12vw;
+            background-color: var(--fourcolor);
+            display: inline-block;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 0;
+
+
+        }
+
+        .card1 {
+            height: 29vh;
+            width: 8vw;
+            background-color: var(--firstcolor);
+            border: 12px;
+            margin-left: 20px;
+            padding: 6px;
+            border: 0.8px solid;
+            border-radius: 12px;
+            color: var(--fivecolor);
+
+
+        }
+
+
+
+        .inside1 {
+            border: 2px solid red;
+
+        }
+
+        .card2 {
+            height: 29vh;
+            width: 8vw;
+            background-color: var(--firstcolor);
+            border: 12px;
+            margin-left: 20px;
+            padding: 6px;
+            border: 0.8px solid;
+            border-radius: 12px;
+            color: var(--fivecolor);
+
+        }
+
+        .contain {
+            text-align: center;
+            font-size: 22px;
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+
+        }
+
+        .book {
+            height: 30vh;
+            width: 87vw;
+            border: 1px solid red;
+            position: relative;
+            left: 100px;
+        }
+
+        ul {
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+
+        }
+
+        .one {
+            position: relative;
+            right: 70px;
+        }
+
+        .two {
+            position: relative;
+            left: 70px;
+        }
+
+        .img2 {
+            float: left;
+            margin-left: 20px;
+            margin-top: -10px;
+            /* margin-bottom: 8px; */
+            background-color: var(--tricolor);
+
+        }
+
+        button {
+            float: right;
+            margin-top: -25px;
+            padding: 10px;
+            border-radius: 14px;
+            background-color: var(--fourcolor);
+        }
+
+        @media only screen and (max-width:455px) {
+            body {
+                background-color: rgb(255, 0, 51);
+            }
+
+            button {
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+
+            .cards {
+                overflow: hidden;
+            }
+
+            .link {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img class="img2"
+            src="https://th.bing.com/th/id/OIP.m6ga-MeADU_lPvrS5C3u5gHaDt?w=291&h=175&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt="">
+        <div class="link">
+            <ul>
+                <li class="two">Service</li>
+                <li>Menu</li>
+                <li class="one">About us</li>
+            </ul>
+        </div>
+        <button>login</button>
+        <!-- <img src="black-gemini-logo_svgstack_com_37151781808669.svg" alt=""> -->
+    </nav>
+    <div class="cards">
+        <div class="card1">
+            “This place is our go-to spot for Sunday dinners! From the kid’s menu to the wine list, everything is done
+            right. The staff remembers our names, and the food quality never slips.”
+
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card2">
+            “I’m gluten intolerant, so eating out is tricky, but this restaurant blew me away. They had clear options,
+            and my gluten-free pasta was absolutely delicious.Finally place that gets it!”
+
+        </div>
+    </div><br><br>
+    <div class="contain">
+        <h2>Book Your Table</h2>
+        You can book your table online easily in just a couple of minutes. We take reservations for lunch, just check
+        the availability of your table.
+    </div>
+    <div class="book">
+
+    </div>
+
+
+</body>
+
+</html>
