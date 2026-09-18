@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+        button{
+            margin: 1%;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px solid rebeccapurple;
+            padding: 10px;
+            margin: 10px;
+            height: 80vh;
+        }
+        .subdiv1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 40vw;
+            border: 1px solid;
+            background-color: rgb(193, 119, 29);
+            padding: 5px;
+        }
+            .subdiv2{
+                 display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            width: 40vw;
+            border: 1px solid;
+            background-color: rgb(193, 119, 29);
+            padding: 5px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            
+        }
+        @media only screen and (max-width: 455px) {
+            .container{
+                flex-direction: column;
+
+            }
+            .subdiv1{
+                margin: 5px;
+                 height: 45vh;
+            width: 60vw;
+            }
+             .subdiv2{
+                margin: 5px;
+                 height: 45vh;
+            width: 60vw;
+            }
+
+        }
+        footer{
+            border: 1px solid salmon;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav><button>main</button>
+        <button>services</button><button>more</button>
+    </nav>
+    <div class="container">
+        <div class="subdiv1"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPf_062JKWOBQr9rKxfyjLtlwzCn6Wwx_fJ6vQDIAgQ&s=10" alt=""></div>
+        <div class="subdiv2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPf_062JKWOBQr9rKxfyjLtlwzCn6Wwx_fJ6vQDIAgQ&s=10" alt=""></div>
+    </div>
+    <footer>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla veritatis cum doloremque tempore accusamus
+        fugit. Cum dicta soluta id unde veniam nostrum rem temporibus ducimus.</footer>
+</body>
+
+</html>
