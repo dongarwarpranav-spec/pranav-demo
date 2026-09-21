@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 8</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80vw;
+    height: 80vh;
+    background-color: aqua;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation:
+        moveX 4s linear infinite,
+        bounce 0.5s ease-in-out infinite alternate;
+}
+
+/* Move from left to right */
+@keyframes moveX {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 80px);
+    }
+}
+
+/* Bounce up and down */
+@keyframes bounce {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 250px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box">
+
+</div>
+    </div>
+    
+</body>
+</html>
